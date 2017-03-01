@@ -1,0 +1,34 @@
+{
+  "name": "shallow-eq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "built/bundle.js",
+  "scripts": {
+    "test": "tsc && ava",
+    "bundle": "tsc && webpack --config built/webpack.config.js"
+  },
+  "ava": {
+    "files": [
+      "built/test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ascoders/shallow-eq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ascoders/shallow-eq/issues"
+  },
+  "homepage": "https://github.com/ascoders/shallow-eq#readme",
+  "devDependencies": {
+    "@types/react": "^15.0.13",
+    "ava": "^0.18.2",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "dynamic-object": "^1.0.1"
+  }
+}
