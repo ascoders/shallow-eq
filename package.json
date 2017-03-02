@@ -1,11 +1,10 @@
 {
   "name": "shallow-eq",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "built/bundle.js",
+  "main": "built/index.js",
   "scripts": {
-    "test": "tsc && ava",
-    "bundle": "tsc && webpack --config built/webpack.config.js"
+    "test": "tsc && ava"
   },
   "ava": {
     "files": [
@@ -23,12 +22,7 @@
   },
   "homepage": "https://github.com/ascoders/shallow-eq#readme",
   "devDependencies": {
-    "@types/react": "^15.0.13",
     "ava": "^0.18.2",
-    "typescript": "^2.2.1",
-    "webpack": "^2.2.1"
-  },
-  "dependencies": {
-    "dynamic-object": "^1.0.1"
+    "typescript": "^2.2.1"
   }
 }
