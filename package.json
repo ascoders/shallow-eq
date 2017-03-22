@@ -1,10 +1,11 @@
 {
   "name": "shallow-eq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "built/index.js",
   "scripts": {
-    "test": "tsc && ava"
+    "test": "tsc && ava",
+    "prepublish": "tsc"
   },
   "ava": {
     "files": [
