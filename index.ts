@@ -8,7 +8,7 @@ function is(x: any, y: any) {
     }
 }
 
-export default function shallowEqual(objA: any, objB: any) {
+export default function shallowEqual(objA: any, objB: any, excludes: string[] = []) {
     if (is(objA, objB)) return true
 
     if (typeof objA !== 'object' || objA === null ||
@@ -17,7 +17,9 @@ export default function shallowEqual(objA: any, objB: any) {
     }
 
     const keysA = Object.keys(objA)
+        .filter(key => !excludes.some(excludeKey => excludeKey === key))
     const keysB = Object.keys(objB)
+        .filter(key => !excludes.some(excludeKey => excludeKey === key))
 
     if (keysA.length !== keysB.length) return false
 
